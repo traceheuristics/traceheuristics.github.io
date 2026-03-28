@@ -15,9 +15,9 @@ title = "Blowfish"
 
 [params.author]
   name = "traceHeuristics"
-  image = "img/banner_v1.jpg"
-  headline = "init_analyst --ttl-increment 1"
-  bio = "A little bit about you"
+  image = ""
+  headline = ""
+  bio = ""
   # links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
