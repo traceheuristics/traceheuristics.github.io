@@ -13,3 +13,28 @@ body {
     linear-gradient(90deg, rgba(204, 255, 0, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
 }
+/* --- MONITOR/HUD OVERRIDE --- */
+
+/* Forces the "Tiny Square" into a Wide Vivid Rectangle */
+.home-avatar, .header-avatar {
+    border-radius: 4px !important;    /* Sharp tactical corners */
+    width: 600px !important;         /* Expand to banner width */
+    height: auto !important;         /* Keep art from squishing */
+    max-width: 95vw !important;      /* Mobile safety */
+    aspect-ratio: 16 / 9 !important; /* The Cinematic HUD Shape */
+    object-fit: cover !important;    /* Ensure image fills the frame */
+    border: 1px solid rgba(204, 255, 0, 0.6) !important; /* Neon Lime Frame */
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.3); /* Neon Glow */
+}
+
+/* Ensure the image inside is crystal clear */
+.home-avatar img, .header-avatar img {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* Brighten the Neon Lime Text Glow */
+.text-primary-500 {
+    color: #ccff00 !important;
+    text-shadow: 0 0 8px rgba(204, 255, 0, 0.5);
+}
