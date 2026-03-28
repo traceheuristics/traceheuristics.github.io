@@ -13,35 +13,7 @@ body {
     linear-gradient(90deg, rgba(204, 255, 0, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
 }
-/* --- MONITOR/HUD OVERRIDE --- */
 
-/* Forces the "Tiny Square" into a Wide Vivid Rectangle */
-/* NUCLEAR OVERRIDE FOR THE HUD RECTANGLE */
-
-/* This targets the container DIV and the IMAGE inside it simultaneously */
-.flex.flex-col.items-center .mb-2, 
-.home-avatar, 
-.header-avatar,
-#profile-image {
-    border-radius: 4px !important;    /* Kill the circle */
-    width: 600px !important;         /* Massive width */
-    height: auto !important;         /* Let it expand */
-    max-width: 95vw !important;      /* Mobile safety */
-    aspect-ratio: 16 / 9 !important; /* Force Rectangle */
-    overflow: hidden !important;     /* Contain the art */
-    border: 1px solid rgba(204, 255, 0, 0.6) !important;
-}
-
-/* Ensure the image stretches to fill the new wide container */
-.home-avatar img, 
-.header-avatar img,
-#profile-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* No squishing */
-    filter: none !important;
-    opacity: 1 !important;
-}
 /* Ensure the image inside is crystal clear */
 .home-avatar img, .header-avatar img {
     filter: none !important;
