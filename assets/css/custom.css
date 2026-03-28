@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 :root {
   /* Neon Lime (The primary HUD accent) */
   --color-primary-500: 204, 255, 0; 
@@ -42,4 +43,11 @@ body {
 /* 5. CLEANUP: HIDE THE THEME'S DEFAULT AVATAR */
 .home-avatar, .header-avatar {
     display: none !important;
+}
+/* THE MATRIX SUBTITLE OVERRIDE */
+.text-lg.font-mono.text-primary-500 {
+    font-family: 'Share Tech Mono', monospace !important;
+    letter-spacing: 0.15em !important; /* Spaces it out like a terminal */
+    font-weight: 400 !important;
+    text-shadow: 0 0 10px rgba(204, 255, 0, 0.6) !important; /* Stronger Neon Glow */
 }
