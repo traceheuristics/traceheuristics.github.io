@@ -3,7 +3,7 @@
 # https://nunocoracao.github.io/blowfish/docs/getting-started/
 
 theme = "blowfish"
-# baseURL = "https://traceheuristics.github.io/"
+baseURL = "https://traceheuristics.github.io/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
@@ -30,3 +30,6 @@ enableEmoji = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  
+[params]
+  customCSS = true
