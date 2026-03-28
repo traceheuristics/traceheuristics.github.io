@@ -1,8 +1,45 @@
 :root {
-  /* Neon Lime (matching Romina's HUD) */
+  /* Neon Lime (The primary HUD accent) */
   --color-primary-500: 204, 255, 0; 
-  /* Deep Slate (The Void) */
-  --color-neutral-900: 13, 17, 23;
+  --color-primary-400: 220, 255, 50;
+  --color-primary-600: 170, 212, 0;
+  
+  /* Deep Slate (The Void/Background) */
+  --color-neutral-900: 13, 17, 23; 
   --color-neutral-800: 22, 27, 34;
+  
+  /* Text Contrast */
+  --color-neutral-100: 230, 237, 243;
 }
 
+/* 1. THE TECHNICAL GRID SYSTEM */
+body {
+    background-image: 
+        linear-gradient(rgba(204, 255, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(204, 255, 0, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-color: rgb(var(--color-neutral-900));
+}
+
+/* 2. NEON TYPOGRAPHY GLOW */
+.text-primary-500, h1, h2, h3 {
+    color: rgb(var(--color-primary-500)) !important;
+    text-shadow: 0 0 8px rgba(204, 255, 0, 0.4);
+}
+
+/* 3. BORDER & LINK RE-CALIBRATION */
+.prose a, .border-primary-500 {
+    color: rgb(var(--color-primary-500)) !important;
+    border-color: rgba(204, 255, 0, 0.5) !important;
+}
+
+/* 4. BANNER SHADOW & FRAME (Matching the Custom Layout) */
+.shadow-neon {
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.3) !important;
+    border: 1px solid rgba(204, 255, 0, 0.6) !important;
+}
+
+/* 5. CLEANUP: HIDE THE THEME'S DEFAULT AVATAR */
+.home-avatar, .header-avatar {
+    display: none !important;
+}
