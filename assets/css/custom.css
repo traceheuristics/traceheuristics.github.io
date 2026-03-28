@@ -16,17 +16,32 @@ body {
 /* --- MONITOR/HUD OVERRIDE --- */
 
 /* Forces the "Tiny Square" into a Wide Vivid Rectangle */
-.home-avatar, .header-avatar {
-    border-radius: 4px !important;    /* Sharp tactical corners */
-    width: 600px !important;         /* Expand to banner width */
-    height: auto !important;         /* Keep art from squishing */
+/* NUCLEAR OVERRIDE FOR THE HUD RECTANGLE */
+
+/* This targets the container DIV and the IMAGE inside it simultaneously */
+.flex.flex-col.items-center .mb-2, 
+.home-avatar, 
+.header-avatar,
+#profile-image {
+    border-radius: 4px !important;    /* Kill the circle */
+    width: 600px !important;         /* Massive width */
+    height: auto !important;         /* Let it expand */
     max-width: 95vw !important;      /* Mobile safety */
-    aspect-ratio: 16 / 9 !important; /* The Cinematic HUD Shape */
-    object-fit: cover !important;    /* Ensure image fills the frame */
-    border: 1px solid rgba(204, 255, 0, 0.6) !important; /* Neon Lime Frame */
-    box-shadow: 0 0 20px rgba(204, 255, 0, 0.3); /* Neon Glow */
+    aspect-ratio: 16 / 9 !important; /* Force Rectangle */
+    overflow: hidden !important;     /* Contain the art */
+    border: 1px solid rgba(204, 255, 0, 0.6) !important;
 }
 
+/* Ensure the image stretches to fill the new wide container */
+.home-avatar img, 
+.header-avatar img,
+#profile-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* No squishing */
+    filter: none !important;
+    opacity: 1 !important;
+}
 /* Ensure the image inside is crystal clear */
 .home-avatar img, .header-avatar img {
     filter: none !important;
