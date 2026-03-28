@@ -26,7 +26,7 @@ enableCodeCopy = true
   showScrollToTop = true
 
  [homepage]
-  layout = "hero"
+  layout = "background"
   homepageImage = "img/banner_v1.jpg"
   showAvatar = false
   avatarStyle = "circle" # options: circle, square
