@@ -28,13 +28,18 @@ enableCodeCopy = true
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "/banner_v1.jpg" # used in: hero, and card
+  [homepage]
+  layout = "profile"
+  homepageImage = "/banner_v1.jpg"
+  showAvatar = true
+  avatarStyle = "circle" # options: circle, square
   showRecent = false
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts"
   cardView = false
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = false
 
 [article]
   showDate = true
