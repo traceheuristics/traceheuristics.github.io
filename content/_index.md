@@ -1,10 +1,8 @@
 ---
-title: "Terminal // traceHeuristics"
-description: "init_analyst --ttl-increment 1"
-homepageImage: "img/banner_v1.jpg" 
+title: ""
+header_image: "img/banner_v1.jpg"
+header_image_alt: "traceHeuristics HUD"
 ---
 
-
-
----
-> "Enter first post here."
+# traceHeuristics
+### init_analyst –ttl-increment 1
