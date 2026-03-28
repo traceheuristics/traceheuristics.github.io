@@ -28,8 +28,8 @@ enableCodeCopy = true
  [homepage]
   layout = "hero"
   homepageImage = "img/banner_v1.jpg"
-  showAvatar = true
-  avatarStyle = "square" 
+  showAvatar = false
+  #avatarStyle = "square" 
   showRecent = false
   showRecentItems = 5
   showMoreLink = false
