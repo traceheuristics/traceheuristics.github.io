@@ -1,0 +1,15 @@
+:root {
+  /* Neon Lime (matching Romina's HUD) */
+  --color-primary-500: 204, 255, 0; 
+  /* Deep Slate (The Void) */
+  --color-neutral-900: 13, 17, 23;
+  --color-neutral-800: 22, 27, 34;
+}
+
+/* Add the technical grid to the background */
+body {
+  background-image: 
+    linear-gradient(rgba(204, 255, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(204, 255, 0, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
