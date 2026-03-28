@@ -26,9 +26,9 @@ enableCodeCopy = true
   showScrollToTop = true
 
  [homepage]
-  layout = "profile"
+  layout = "hero"
   homepageImage = "img/banner_v1.jpg"
-  showAvatar = true
+  showAvatar = false
   avatarStyle = "circle" # options: circle, square
   showRecent = false
   showRecentItems = 5
