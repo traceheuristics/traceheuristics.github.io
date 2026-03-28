@@ -12,23 +12,31 @@ body {
     linear-gradient(rgba(204, 255, 0, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(204, 255, 0, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
-/* RESET SYSTEM: TARGET HERO RECTANGLE ONLY */
 
-.hero-image, [itemprop="image"] {
-    border-radius: 4px !important;    /* Sharp tactical corners */
-    width: 100% !important;
-    max-width: 800px !important;     /* Large, readable rectangle */
-    height: auto !important;         /* NO STRETCHING - maintains aspect ratio */
-    margin: 0 auto 2rem auto !important;
-    display: block !important;
-    border: 1px solid rgba(204, 255, 0, 0.5) !important; /* Neon Lime Frame */
-    box-shadow: 0 0 15px rgba(204, 255, 0, 0.2);
-    filter: none !important;         /* CRYSTAL CLEAR VIBRANCY */
-    opacity: 1 !important;
+  /* TRANSFORM AUTHOR AVATAR INTO HUD BANNER */
+.home-avatar, .header-avatar {
+    /* 1. Kill the circle */
+    border-radius: 4px !important; 
+    
+    /* 2. Expand the dimensions */
+    width: 600px !important;        /* Your desired banner width */
+    height: auto !important;         /* Maintain aspect ratio */
+    max-width: 90vw !important;      /* Mobile safety */
+    
+    /* 3. Force the shape */
+    aspect-ratio: 16 / 9 !important; 
+    object-fit: cover !important;
+    
+    /* 4. Visual Fidelity */
+    filter: none !important;         /* No more "powdery" look */
+    opacity: 1 !important;          /* Full vibrancy */
+    border: 1px solid rgba(204, 255, 0, 0.6) !important; /* Neon Lime Border */
+    box-shadow: 0 0 15px rgba(204, 255, 0, 0.3);
 }
 
-/* Brighten the Neon Lime Text Glow */
-.text-primary-500 {
-    color: #ccff00 !important;
-    text-shadow: 0 0 8px rgba(204, 255, 0, 0.5);
+/* Brighten the image inside the new frame */
+.home-avatar img {
+    border-radius: 4px !important;
+    width: 100% !important;
+    height: 100% !important;
 }
