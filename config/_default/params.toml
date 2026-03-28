@@ -25,10 +25,7 @@ enableCodeCopy = true
   showAppearanceSwitcher = true
   showScrollToTop = true
 
-[homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "/banner_v1.jpg" # used in: hero, and card
-  [homepage]
+ [homepage]
   layout = "profile"
   homepageImage = "/banner_v1.jpg"
   showAvatar = true
