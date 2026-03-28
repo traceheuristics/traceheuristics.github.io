@@ -27,7 +27,7 @@ enableCodeCopy = true
 
  [homepage]
   layout = "profile"
-  homepageImage = "/banner_v1.jpg"
+  homepageImage = "img/banner_v1.jpg"
   showAvatar = true
   avatarStyle = "circle" # options: circle, square
   showRecent = false
