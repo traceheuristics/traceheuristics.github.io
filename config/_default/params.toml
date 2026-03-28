@@ -28,8 +28,8 @@ enableCodeCopy = true
  [homepage]
   layout = "background"
   homepageImage = "img/banner_v1.jpg"
-  showAvatar = false
-  avatarStyle = "circle" # options: circle, square
+  showAvatar = true
+  avatarStyle = "square" 
   showRecent = false
   showRecentItems = 5
   showMoreLink = false
